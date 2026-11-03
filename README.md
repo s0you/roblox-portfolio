@@ -2,6 +2,8 @@
 
 A responsive Roblox developer portfolio with light and dark themes, project filters, and image galleries. Built with HTML, CSS, JavaScript, and a Node.js static server.
 
+View the live portfolio at [m4g1c.wahyuwira.com](https://m4g1c.wahyuwira.com).
+
 ## Requirements
 
 - Node.js 20 or newer.
