@@ -94,14 +94,3 @@ You are free to edit and customize this portfolio, including its layout, colors,
 > © [current year] M4G1C. Made with ❤️.
 
 The year updates automatically. You may add your own attribution alongside the original credit, but please do not remove, hide, or replace it.
-
-## Project structure
-
-- `public/index.html`: page content and layout.
-- `public/*.css`: page styles, themes, and animations.
-- `public/app.js`: project filters, galleries, navigation, and theme controls.
-- `public/loader.js`: loading screen behavior.
-- `public/data/projects.json`: project descriptions, categories, and image references.
-- `public/images/`: portfolio images.
-- `server.mjs`: static server and startup logging.
-- `scripts/`: validation and build scripts.
