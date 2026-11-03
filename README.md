@@ -105,5 +105,3 @@ The year updates automatically. You may add your own attribution alongside the o
 - `public/images/`: portfolio images.
 - `server.mjs`: static server and startup logging.
 - `scripts/`: validation and build scripts.
-
-Keep project names, image paths, and brand names consistent when editing the content. Formatting settings are in `.prettierrc.json`. Generated files in `dist/` and dependencies in `node_modules/` are excluded from Git.
