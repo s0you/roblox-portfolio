@@ -1,0 +1,501 @@
+{
+  "categories": [
+    {
+      "id": "world",
+      "name": "Experiences"
+    },
+    {
+      "id": "systems",
+      "name": "Game systems"
+    },
+    {
+      "id": "ui",
+      "name": "UI & interaction"
+    }
+  ],
+  "projects": [
+    {
+      "id": "mosh",
+      "title": "Moshkopi 1990",
+      "subtitle": "A virtual stage concert with real band performances.",
+      "category": "world",
+      "label": "VIRTUAL GIGS / EXPERIENCE",
+      "type": "DEVELOPER",
+      "visual": "",
+      "tags": ["Hangout", "Virtual Concert", "Live events"],
+      "intro": "Moshcorblox / Moshkopi 1990 is a Roblox virtual gigs experience with real band performances and social interaction.",
+      "details": [
+        "Rebuilt the existing systems.",
+        "Music queues, vote skip, and admin controls.",
+        "Vote kick system.",
+        "Cross-server music synchronization.",
+        "Community features including photobooths, broadcasts, and player interactions.",
+        "Cinematics and event features supporting live virtual gigs.",
+        "Visual effects and cutscenes for music events.",
+        "Additional minigames.",
+        "Additional features.",
+        "Actively maintained."
+      ],
+      "note": "Role: Developer / Scripter.",
+      "link": "https://www.roblox.com/games/115259984280794",
+      "thumbnail": "/images/moshcorblox/stage.jpg",
+      "thumbnailAlt": "Moshkopi 1990",
+      "images": [
+        {
+          "src": "/images/moshcorblox/stage2.png",
+          "alt": "Moshkopi 1990 stage",
+          "caption": "Dongker (Indonesian band) performing at Moshkopi 1990."
+        },
+        {
+          "src": "/images/moshcorblox/dongker.png",
+          "alt": "Moshkopi 1990 stage",
+          "caption": "Dongker (Indonesian band) performing at Moshkopi 1990."
+        },
+        {
+          "src": "/images/moshcorblox/coffee.jpg",
+          "alt": "Moshkopi 1990",
+          "caption": "Collaboration with Kopi Kenangan, an Indonesian coffee brand."
+        },
+        {
+          "src": "/images/moshcorblox/fightclub.png",
+          "alt": "Fight Club",
+          "caption": "Tournament Vol. 1."
+        },
+        {
+          "src": "/images/moshcorblox/gallery2.jpg",
+          "alt": "Moshkopi 1990",
+          "caption": "Moshkopi 1990 highlighting past virtual concerts and our featured collaborators."
+        },
+        {
+          "src": "/images/moshcorblox/gallery.png",
+          "alt": "Moshkopi 1990",
+          "caption": "Moshkopi 1990 highlighting past virtual concerts and our featured collaborators."
+        },
+        {
+          "src": "/images/moshcorblox/wave.png",
+          "alt": "Wave Vault",
+          "caption": "Electronic music virtual concert collaboration with GoingNoodless (Indonesian music group)."
+        },
+        {
+          "src": "/images/moshcorblox/studio.png",
+          "alt": "Studio",
+          "caption": "Studio Concert."
+        },
+        {
+          "src": "/images/moshcorblox/photobox.png",
+          "alt": "Photobox",
+          "caption": "Photobox."
+        }
+      ]
+    },
+    {
+      "id": "harvest",
+      "title": "Harvest Expedition",
+      "subtitle": "My first Roblox game, featuring hiking, fishing, quests, and places to relax.",
+      "category": "world",
+      "label": "MOUNT / EXPERIENCE",
+      "type": "OWNER",
+      "visual": "",
+      "tags": ["Hiking", "Fishing", "Chill"],
+      "intro": "Harvest Expedition is an adventure game on Roblox where you can go hiking, enjoy fishing, complete exciting quests, or simply chill out.",
+      "details": [
+        "Thirst and hunger systems.",
+        "Fishing system with different types of fish.",
+        "Quest system with different types of quests.",
+        "Music player.",
+        "Multiple weather conditions.",
+        "Gacha system.",
+        "Additional features.",
+        "Updates ended in 2025."
+      ],
+      "note": "Role: Owner.",
+      "link": "https://www.roblox.com/games/114537936048137",
+      "thumbnail": "/images/harvest/cover.png",
+      "thumbnailAlt": "Harvest Expedition thumbnail",
+      "images": [
+        {
+          "src": "/images/harvest/cover.png",
+          "alt": "Harvest Expedition cover",
+          "caption": "In-game screenshot."
+        },
+        {
+          "src": "/images/harvest/air.png",
+          "alt": "Harvest Expedition",
+          "caption": "In-game screenshot."
+        },
+        {
+          "src": "/images/harvest/bintang.png",
+          "alt": "Harvest Expedition",
+          "caption": "In-game screenshot."
+        },
+        {
+          "src": "/images/harvest/kolam.png",
+          "alt": "Harvest Expedition",
+          "caption": "Fishing"
+        },
+        {
+          "src": "/images/harvest/quest.png",
+          "alt": "Harvest Expedition",
+          "caption": "In-game menu and quests."
+        }
+      ]
+    },
+    {
+      "id": "abyssal",
+      "title": "Abyssal Voyager",
+      "subtitle": "An album showcase for Anti Orbit.",
+      "category": "world",
+      "label": "ALBUM SHOWCASE / EXPERIENCE",
+      "type": "DEVELOPER",
+      "visual": "",
+      "tags": ["Hangout", "Music", "Live events"],
+      "intro": "An interactive album showcase for Anti Orbit.",
+      "details": [
+        "Music system with zone detection.",
+        "Visual Effects.",
+        "Ship effects and animations."
+      ],
+      "note": "Role: Developer / Scripter.",
+      "link": "https://www.roblox.com/games/88507227413919",
+      "thumbnail": "/images/abyssal/cover.jpg",
+      "thumbnailAlt": "Abyssal Voyager thumbnail",
+      "images": [
+        {
+          "src": "/images/abyssal/cover.jpg",
+          "alt": "Abyssal Voyager cover",
+          "caption": "Cover image for Abyssal Voyager."
+        }
+      ]
+    },
+
+    {
+      "id": "emote",
+      "title": "Emote Wheel",
+      "subtitle": "Smooth emote interface.",
+      "category": "systems",
+      "label": "UI / PLAYER EXPRESSION",
+      "type": "GAME SYSTEM",
+      "visual": "",
+      "tags": ["Viewport preview", "Animation", "Effects", "Music"],
+      "intro": "An emote interface with character previews, visual effects, and smooth transitions that make player expression feel personal.",
+      "details": [
+        "Character previews using ViewportFrame.",
+        "Page navigation and easily maintained emote slots.",
+        "Hover feedback, UI sounds, and opening and closing transitions.",
+        "Animation playback integrated with attachments and character effects.",
+        "Music accompanying animations."
+      ],
+      "note": "Roblox system contribution. The card presents a portfolio visual study.",
+      "thumbnail": "/images/emote-wheel/cover.jpg",
+      "thumbnailAlt": "Emote Wheel",
+      "images": [
+        {
+          "src": "/images/emote-wheel/cover.jpg",
+          "alt": "Emote Wheel portfolio illustration",
+          "caption": "Interface."
+        },
+        {
+          "src": "/images/emote-wheel/1.jpg",
+          "alt": "Emote Wheel portfolio illustration",
+          "caption": "Effect."
+        },
+        {
+          "src": "/images/emote-wheel/2.jpg",
+          "alt": "Emote Wheel portfolio illustration",
+          "caption": "Effect."
+        },
+        {
+          "src": "/images/emote-wheel/3.jpg",
+          "alt": "Emote Wheel portfolio illustration",
+          "caption": "Effect."
+        }
+      ]
+    },
+
+    {
+      "id": "npcdialogue",
+      "title": "NPC Dialogue",
+      "subtitle": "Engaging conversations with non-player characters.",
+      "category": "systems",
+      "label": "UI / NPC DIALOGUE",
+      "type": "GAME SYSTEM",
+      "visual": "",
+      "tags": ["Animation", "Effects"],
+      "intro": "An NPC dialogue system with engaging conversations, character previews, and smooth transitions.",
+      "details": [
+        "Animated text.",
+        "NPC animations.",
+        "Page navigation and easily maintained dialogue options.",
+        "NPC outlines and head tracking that follows the player.",
+        "Hover feedback, UI sounds, and opening and closing transitions.",
+        "An easy-to-use interface."
+      ],
+      "note": "Roblox system contribution. The card presents a portfolio visual study.",
+      "thumbnail": "/images/npc-dialogue/cover.jpg",
+      "thumbnailAlt": "NPC Dialogue",
+      "images": [
+        {
+          "src": "/images/npc-dialogue/cover.jpg",
+          "alt": "NPC Dialogue portfolio illustration",
+          "caption": "Dialogue."
+        },
+        {
+          "src": "/images/npc-dialogue/1.jpg",
+          "alt": "NPC Dialogue portfolio illustration",
+          "caption": "Dialogue."
+        },
+        {
+          "src": "/images/npc-dialogue/2.jpg",
+          "alt": "NPC Dialogue portfolio illustration",
+          "caption": "Dialogue."
+        }
+      ]
+    },
+
+    {
+      "id": "scavengerhunt",
+      "title": "Scavenger Hunt",
+      "subtitle": "Scavenger Hunt collaboration with Moshkopi 1990 x Kopi Kenangan (an Indonesian coffee brand).",
+      "category": "systems",
+      "label": "GAMEPLAY / SCENERY",
+      "type": "GAME SYSTEM",
+      "visual": "",
+      "tags": ["Animation", "Effects", "DataStore"],
+      "intro": "A scavenger hunt system with engaging challenges, character previews, and smooth transitions.",
+      "details": [
+        "Scavenger hunt animations.",
+        "Player visual effects after collecting items.",
+        "Leaderboard system.",
+        "Point system with animations.",
+        "Global spawn points and random item placement."
+      ],
+      "note": "Roblox system contribution. The card presents a portfolio visual study.",
+      "thumbnail": "/images/scavenger-hunt/cover2.jpg",
+      "thumbnailAlt": "Scavenger Hunt",
+      "images": [
+        {
+          "src": "/images/scavenger-hunt/cover.jpg",
+          "alt": "Scavenger Hunt portfolio",
+          "caption": "Item."
+        },
+        {
+          "src": "/images/scavenger-hunt/1.jpg",
+          "alt": "Scavenger Hunt portfolio",
+          "caption": "Effect."
+        },
+        {
+          "src": "/images/scavenger-hunt/2.png",
+          "alt": "Scavenger Hunt portfolio",
+          "caption": "Leaderboard."
+        }
+      ]
+    },
+
+    {
+      "id": "spraypaint",
+      "title": "Spray Paint",
+      "subtitle": "A creative spray paint tool for Roblox.",
+      "category": "systems",
+      "label": "CREATIVE / TOOLS",
+      "type": "GAME SYSTEM",
+      "visual": "",
+      "tags": ["Draw", "Effects", "Layer"],
+      "intro": "A creative spray paint tool for Roblox.",
+      "details": [
+        "Drawing tools.",
+        "Color selection.",
+        "Smart layers.",
+        "Options to hide other players' drawings and queue rendering.",
+        "Vote Kick"
+      ],
+      "note": "Roblox system contribution. The card presents a portfolio visual study.",
+      "thumbnail": "/images/spray-paint/cover.jpg",
+      "thumbnailAlt": "Spray Paint",
+      "images": [
+        {
+          "src": "/images/spray-paint/1.png",
+          "alt": "Spray Paint portfolio",
+          "caption": "Spray Paint."
+        },
+        {
+          "src": "/images/spray-paint/2.png",
+          "alt": "Spray Paint portfolio",
+          "caption": "Layer."
+        }
+      ]
+    },
+
+    {
+      "id": "adminabuse",
+      "title": "Admin Abuse Module",
+      "subtitle": "Turn the stage into a spectacle.",
+      "category": "systems",
+      "label": "ADMIN / LIVE EFFECTS",
+      "type": "GAME SYSTEM",
+      "visual": "",
+      "tags": ["Animation", "Visual Effects", "Weather"],
+      "intro": "A flexible Admin Abuse module. Inspired by Grow a Garden's Admin Abuse events, this system brings admin-triggered weather, animations, and visual effects to Moshcorblox's live concerts.",
+      "details": [
+        "Weather changes and stage-wide visual effects.",
+        "A variety of animations.",
+        "A variety of visual effects.",
+        "New effect variations for different events."
+      ],
+      "note": "Built for live concerts and community events at Moshcorblox.",
+      "thumbnail": "/images/adminabuse/cover.jpg",
+      "thumbnailAlt": "Moshcorblox Admin Abuse event effects",
+      "images": [
+        {
+          "src": "/images/adminabuse/1.png",
+          "alt": "Admin-triggered visual effects at Moshcorblox",
+          "caption": "Visual effects created for Moshcorblox live events."
+        },
+        {
+          "src": "/images/adminabuse/2.png",
+          "alt": "Weather and animation effects at Moshcorblox",
+          "caption": "Weather and animation effects that transform the concert atmosphere."
+        }
+      ]
+    },
+
+    {
+      "id": "cutscene",
+      "title": "Cutscene Module",
+      "subtitle": "Bring every event into focus.",
+      "category": "systems",
+      "label": "CINEMATICS / EVENTS",
+      "type": "GAME SYSTEM",
+      "visual": "",
+      "tags": ["Animation", "Visual Effects", "Sound"],
+      "intro": "A flexible cutscene module for creating cinematic sequences, combining animations, visual effects, and sound for live events.",
+      "details": [
+        "Configurable animations, effects, and sound.",
+        "Reusable sequences for different events.",
+        "Admin-controlled cutscene playback.",
+        "Create cutscenes without animation plugins."
+      ],
+      "note": "Built for live events and cinematic storytelling at Moshcorblox.",
+      "thumbnail": "/images/cutscene/cover.jpg",
+      "thumbnailAlt": "Moshcorblox cinematic cutscene showcase",
+      "images": [
+        {
+          "src": "/images/cutscene/1.jpg",
+          "alt": "Cutscene for the Solidarity Through Roblox event",
+          "caption": "A cinematic sequence for Solidarity Through Roblox, a humanitarian event supporting those affected by forest and land fires in Kalimantan."
+        },
+        {
+          "src": "/images/cutscene/2.jpg",
+          "alt": "Cutscene for the Solidarity Through Roblox event",
+          "caption": "A cinematic sequence for Solidarity Through Roblox, a humanitarian event supporting those affected by forest and land fires in Kalimantan."
+        },
+        {
+          "src": "/images/cutscene/3.jpg",
+          "alt": "Cutscene for the Solidarity Through Roblox event",
+          "caption": "A cinematic sequence for Solidarity Through Roblox, a humanitarian event supporting those affected by forest and land fires in Kalimantan."
+        },
+        {
+          "src": "/images/cutscene/4.jpg",
+          "alt": "Cutscene for the Solidarity Through Roblox event",
+          "caption": "A cinematic sequence for Solidarity Through Roblox, a humanitarian event supporting those affected by forest and land fires in Kalimantan."
+        },
+        {
+          "src": "/images/cutscene/5.jpg",
+          "alt": "Moshcorblox first anniversary cutscene",
+          "caption": "A cinematic sequence celebrating Moshcorblox's first anniversary."
+        }
+      ]
+    },
+
+    {
+      "id": "rhythmgame",
+      "title": "Rhythm Game",
+      "subtitle": "A dynamic rhythm game with responsive gameplay.",
+      "category": "systems",
+      "label": "GAMEPLAY / MUSIC",
+      "type": "GAME SYSTEM",
+      "visual": "",
+      "tags": ["Audio Sync", "Tap & Hold", "Mobile Support"],
+      "intro": "A four-lane rhythm game with music-synced note charts, precise timing judgements, and a neon playfield. Supports keyboard and touch controls, with an in-world guitar performance.",
+      "details": [
+        "Four-lane tap and hold gameplay synced to music.",
+        "Timing judgements, combo multipliers, and scoring.",
+        "Performance meter with fail and replay support.",
+        "Neon visuals with keyboard and mobile controls.",
+        "Guitar animations and detailed results.",
+        "Record charts."
+      ],
+      "note": "Roblox system contribution. The card presents a portfolio visual study.",
+      "thumbnail": "/images/rhythm-game/cover.jpg",
+      "thumbnailAlt": "Rhythm Game",
+      "images": [
+        {
+          "src": "/images/rhythm-game/cover.jpg",
+          "alt": "Rhythm Game portfolio",
+          "caption": "In-game screenshot."
+        }
+      ]
+    },
+
+    {
+      "id": "battleship",
+      "title": "Battleship Game",
+      "subtitle": "A classic naval combat game with modern twists.",
+      "category": "systems",
+      "label": "GAMEPLAY / STRATEGY",
+      "type": "GAME SYSTEM",
+      "visual": "",
+      "tags": ["Audio Sync", "Tap & Hold", "Mobile Support"],
+      "intro": "A classic naval combat game with modern twists. Players engage in strategic battles across a grid-based sea, using logic and foresight to sink their opponent's fleet.",
+      "details": [
+        "Classic battleship gameplay with a modern twist.",
+        "Strategic placement and targeting mechanics.",
+        "Real-time multiplayer battles.",
+        "Customizable ship designs and upgrades."
+      ],
+      "note": "Roblox system contribution. The card presents a portfolio visual study.",
+      "thumbnail": "/images/battleship/cover.jpg",
+      "thumbnailAlt": "Battleship Game",
+      "images": [
+        {
+          "src": "/images/battleship/1.jpg",
+          "alt": "Battleship Game portfolio",
+          "caption": "In-game rules."
+        },
+        {
+          "src": "/images/battleship/2.jpg",
+          "alt": "Battleship Game portfolio",
+          "caption": "In-game screenshot from Moshcorblox."
+        }
+      ]
+    },
+
+    {
+      "id": "music",
+      "title": "Concert Music System",
+      "subtitle": "The right track. Across every server.",
+      "category": "systems",
+      "label": "AUDIO / CROSS-SERVER",
+      "type": "GAME SYSTEM",
+      "visual": "",
+      "tags": ["MessagingService", "Queue", "Admin controls"],
+      "intro": "A concert music system with player queues, a searchable music library, and centralized admin controls.",
+      "details": [
+        "Players can queue their favorite music.",
+        "Music library with search, genres, and pagination.",
+        "Custom audio ID queues, cooldowns, and asset validation.",
+        "Vote skip, autoplay, volume control, and Concert Mode.",
+        "Cross-server synchronization and persistent library storage."
+      ],
+      "note": "Built for the virtual gigs experience at Moshcorblox.",
+      "thumbnail": "/images/music-system/cover.jpg",
+      "thumbnailAlt": "Concert Music System portfolio illustration",
+      "images": [
+        {
+          "src": "/images/music-system/cover.jpg",
+          "alt": "Moshcorblox music system illustration",
+          "caption": "A visual study of the music system for Moshcorblox virtual gigs."
+        }
+      ]
+    }
+  ]
+}

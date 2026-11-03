@@ -1,0 +1,204 @@
+﻿/* The intro stays invisible if JavaScript is unavailable. */
+.site-loader {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  place-items: center;
+  overflow: hidden;
+  background: #090909;
+  color: #d7cec1;
+  opacity: 1;
+  transition: opacity 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.site-loader::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(ellipse at 50% 42%, #32201b 0%, #16110f 34%, transparent 65%);
+  animation: loader-ambient 4.8s ease-in-out infinite;
+}
+html.is-loading {
+  overflow: hidden;
+}
+.is-loading .site-loader,
+.site-loader.is-leaving {
+  display: grid;
+}
+.site-loader.is-leaving {
+  opacity: 0;
+  pointer-events: none;
+}
+.loader-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px;
+  transform: translateY(-12px);
+}
+.loader-flight {
+  margin-bottom: 28px;
+  animation: loader-arrive 900ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+.loader-bat {
+  display: block;
+  width: clamp(160px, 24vw, 210px);
+  overflow: visible;
+  filter: drop-shadow(0 8px 20px #b5764d12);
+  animation: loader-hover 3.2s ease-in-out infinite;
+}
+.bat-wing {
+  transform-origin: 113px 76px;
+  animation: loader-flap 1100ms cubic-bezier(0.45, 0, 0.55, 1) infinite;
+}
+.bat-membrane {
+  fill: #302621;
+  stroke: #856650;
+  stroke-width: 0.8;
+  stroke-linejoin: round;
+}
+.bat-veins {
+  stroke: #aa8467;
+  stroke-width: 0.65;
+  opacity: 0.3;
+}
+.bat-body {
+  fill: #66584b;
+}
+.bat-eyes {
+  stroke: #c18262;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+}
+.loader-brand {
+  font: 500 24px/1.2 var(--heading, Arial, sans-serif);
+  letter-spacing: 0.18em;
+  padding-left: 0.18em;
+  animation: loader-wordmark 850ms 200ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+.loader-brand > span {
+  color: #a26950;
+}
+.loader-track {
+  width: 144px;
+  height: 1px;
+  margin: 24px 0 16px;
+  overflow: hidden;
+  background: #b993781c;
+  animation: loader-reveal 700ms 450ms ease both;
+}
+.loader-track > span {
+  display: block;
+  width: 35%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, #9d7055, transparent);
+  animation: loader-signal 2s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+}
+.loader-status {
+  color: #958778;
+  font: 10px/1.6 var(--mono, monospace);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  animation: loader-reveal 900ms 650ms ease both;
+}
+.is-leaving .loader-flight {
+  animation: loader-depart 550ms cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+.is-leaving .loader-brand,
+.is-leaving .loader-track,
+.is-leaving .loader-status {
+  animation: loader-reveal 300ms ease reverse both;
+}
+@keyframes loader-arrive {
+  from {
+    opacity: 0;
+    transform: translate3d(-8px, 20px, 0) rotate(-4deg);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+}
+@keyframes loader-flap {
+  0%,
+  100% {
+    transform: rotate(-3deg) scaleY(1);
+  }
+  28% {
+    transform: rotate(14deg) scaleY(0.46);
+  }
+  64% {
+    transform: rotate(-5deg) scaleY(1.03);
+  }
+}
+@keyframes loader-hover {
+  0%,
+  100% {
+    transform: translate3d(-2px, 0, 0) rotate(-1deg);
+  }
+  50% {
+    transform: translate3d(2px, -8px, 0) rotate(1deg);
+  }
+}
+@keyframes loader-wordmark {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+    letter-spacing: 0.26em;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    letter-spacing: 0.18em;
+  }
+}
+@keyframes loader-reveal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes loader-depart {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-28px);
+  }
+}
+@keyframes loader-ambient {
+  0%,
+  100% {
+    opacity: 0.45;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+@keyframes loader-signal {
+  from {
+    transform: translateX(-110%);
+  }
+  to {
+    transform: translateX(390%);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .site-loader {
+    transition: none;
+  }
+  .site-loader::before,
+  .site-loader *,
+  .is-leaving .loader-flight,
+  .is-leaving .loader-brand,
+  .is-leaving .loader-track,
+  .is-leaving .loader-status {
+    animation: none !important;
+  }
+}

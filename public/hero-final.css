@@ -1,0 +1,287 @@
+.hero-backdrop {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  display: grid;
+  place-items: center;
+  width: min(44%, 570px);
+  height: 530px;
+  transform: translateY(-50%);
+  z-index: 0;
+  isolation: isolate;
+  pointer-events: none;
+  /* Fade the decoration before the portrait's transparent lower edge. */
+  mask-image: linear-gradient(to bottom, #000 0%, #000 50%, #0008 61%, transparent 72%);
+}
+.hero-backdrop .avatar-ring {
+  opacity: 0.45;
+}
+body[data-theme='dark'] .hero-backdrop {
+  height: 550px;
+}
+@media (min-width: 701px) and (max-width: 1050px) {
+  body[data-theme='dark'] .hero-backdrop {
+    height: 480px;
+  }
+}
+.avatar-scene {
+  perspective: none;
+}
+.avatar-tilt {
+  transform: none !important;
+  transition: none;
+}
+.avatar-float {
+  position: relative;
+  animation: avatar-float 7s ease-in-out infinite;
+}
+.hero-accent {
+  position: relative;
+  display: inline-block;
+}
+.glitch-echo {
+  display: none !important;
+  animation: none !important;
+}
+
+/* Anchor the metal brackets to the portrait rather than the surrounding stage. */
+body[data-theme='dark'] .avatar-hardware {
+  --corner-size: clamp(42px, 4.4vw, 60px);
+  position: absolute;
+  inset: -16px -14px -12px;
+  z-index: 2;
+  pointer-events: none;
+}
+body[data-theme='dark'] .hardware-corner {
+  position: absolute;
+  width: var(--corner-size);
+  height: var(--corner-size);
+  border: 0 solid #b29b85;
+  opacity: 0.85;
+  filter: drop-shadow(0 1px 0 #080706);
+}
+body[data-theme='dark'] .corner-tl {
+  top: 0;
+  left: 0;
+  border-top-width: 2px;
+  border-left-width: 2px;
+}
+body[data-theme='dark'] .corner-tr {
+  top: 0;
+  right: 0;
+  border-top-width: 2px;
+  border-right-width: 2px;
+}
+body[data-theme='dark'] .corner-bl {
+  bottom: 0;
+  left: 0;
+  border-bottom-width: 2px;
+  border-left-width: 2px;
+}
+body[data-theme='dark'] .corner-br {
+  bottom: 0;
+  right: 0;
+  border-bottom-width: 2px;
+  border-right-width: 2px;
+}
+body[data-theme='dark'] .hardware-corner::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: #cb7358;
+  box-shadow: 0 0 9px #bd523436;
+}
+body[data-theme='dark'] .corner-tl::after {
+  top: 5px;
+  left: 5px;
+}
+body[data-theme='dark'] .corner-tr::after {
+  top: 5px;
+  right: 5px;
+}
+body[data-theme='dark'] .corner-bl::after {
+  bottom: 5px;
+  left: 5px;
+}
+body[data-theme='dark'] .corner-br::after {
+  bottom: 5px;
+  right: 5px;
+}
+body[data-theme='dark'] .hardware-label {
+  top: -4px;
+  right: calc(var(--corner-size) + 14px);
+  padding: 0 8px;
+  background: #171513;
+  font-size: 7px;
+  line-height: 1;
+  letter-spacing: 0.16em;
+  transform: none;
+  white-space: nowrap;
+  color: #c7b6a2;
+}
+body[data-theme='dark'] .hardware-number {
+  left: calc(var(--corner-size) + 14px);
+  bottom: -4px;
+  padding: 0 8px;
+  background: #171513;
+  font-size: 8px;
+  line-height: 1;
+  letter-spacing: 0.14em;
+  color: #c7b6a2;
+}
+
+/* A repeating signal loop, independent of cursor position. */
+body[data-theme='dark'] .avatar-crop::after,
+body[data-theme='dark'] .avatar-scene:hover .avatar-crop::after {
+  animation: avatar-signal-loop 3.6s steps(1, end) infinite;
+  filter: none;
+}
+@keyframes avatar-signal-loop {
+  0%,
+  7%,
+  19%,
+  31%,
+  51%,
+  64%,
+  79%,
+  90%,
+  100% {
+    opacity: 0;
+    transform: translateX(0);
+    clip-path: inset(0);
+    filter: none;
+  }
+  4% {
+    opacity: 0.58;
+    transform: translateX(4px);
+    clip-path: inset(21% 0 73% 0);
+    filter: sepia(0.25) hue-rotate(320deg);
+  }
+  16% {
+    opacity: 0.5;
+    transform: translateX(-3px);
+    clip-path: inset(62% 0 33% 0);
+  }
+  28% {
+    opacity: 0.4;
+    transform: translateX(3px);
+    clip-path: inset(38% 0 58% 0);
+  }
+  48% {
+    opacity: 0.6;
+    transform: translateX(-4px);
+    clip-path: inset(46% 0 48% 0);
+  }
+  61% {
+    opacity: 0.45;
+    transform: translateX(3px);
+    clip-path: inset(74% 0 23% 0);
+  }
+  76% {
+    opacity: 0.55;
+    transform: translateX(-3px);
+    clip-path: inset(29% 0 66% 0);
+    filter: sepia(0.25) hue-rotate(320deg);
+  }
+  87% {
+    opacity: 0.42;
+    transform: translateX(4px);
+    clip-path: inset(55% 0 41% 0);
+  }
+}
+
+/* Quiet copper dust and a faint technical grid behind the portrait. */
+body[data-theme='dark'] .hero-atmosphere {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  mask-image: linear-gradient(transparent, #000 14%, #000 80%, transparent);
+}
+body[data-theme='dark'] .hero-atmosphere::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(#c6a48b0c 1px, transparent 1px),
+    linear-gradient(90deg, #c6a48b0c 1px, transparent 1px);
+  background-size: 88px 88px;
+  mask-image: radial-gradient(ellipse at 78% 44%, #000, transparent 65%);
+}
+body[data-theme='dark'] .hero-atmosphere > span {
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: #dfab86;
+  box-shadow: 0 0 7px 1px #cf765947;
+  opacity: 0;
+  animation: hero-dust-drift var(--duration) linear var(--delay) infinite;
+}
+body[data-theme='dark'] .hero-atmosphere > span:nth-child(3n) {
+  width: 3px;
+  height: 3px;
+  background: #a9bcb8;
+  box-shadow: 0 0 8px #9dbfb733;
+}
+.hero-grid,
+.hero-foot {
+  position: relative;
+  z-index: 1;
+}
+@keyframes hero-dust-drift {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 28px, 0);
+  }
+  20% {
+    opacity: 0.45;
+  }
+  70% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(22px, -60px, 0);
+  }
+}
+@media (max-width: 700px) {
+  .hero-backdrop,
+  body[data-theme='dark'] .hero-backdrop {
+    top: auto;
+    right: 6%;
+    bottom: 78px;
+    width: 88%;
+    height: 395px;
+    transform: none;
+  }
+  body[data-theme='dark'] .hero-atmosphere > span:nth-child(even) {
+    display: none;
+  }
+  body[data-theme='dark'] .avatar-hardware {
+    inset: -12px -9px -8px;
+  }
+  body[data-theme='dark'] .hardware-label {
+    font-size: 6px;
+    right: calc(var(--corner-size) + 8px);
+    letter-spacing: 0.1em;
+  }
+  body[data-theme='dark'] .hardware-number {
+    font-size: 7px;
+    left: calc(var(--corner-size) + 8px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  body[data-theme='dark'] .hero-atmosphere > span {
+    animation: none !important;
+    opacity: 0.2;
+  }
+  body[data-theme='dark'] .avatar-crop::after {
+    display: none !important;
+    animation: none !important;
+  }
+}

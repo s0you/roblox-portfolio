@@ -1,0 +1,147 @@
+﻿/* Shared timing. Load after style.css and dark.css. */
+:root {
+  --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --motion-fast: 200ms;
+  --motion-normal: 320ms;
+}
+.button,
+.nav-contact,
+.filters button,
+.theme-switch button,
+.gallery-control,
+.gallery-expand,
+.gallery-thumbnails button,
+.modal-close,
+.lightbox-close {
+  transition:
+    transform var(--motion-normal) var(--motion-ease),
+    background-color var(--motion-fast) ease,
+    color var(--motion-fast) ease,
+    border-color var(--motion-fast) ease,
+    box-shadow var(--motion-normal) var(--motion-ease),
+    opacity var(--motion-fast) ease;
+}
+.text-link,
+a.social-action {
+  transition:
+    color var(--motion-fast) ease,
+    border-color var(--motion-fast) ease;
+}
+.project-arrow,
+.project-arrow .ui-icon,
+a.social-action > .social-arrow {
+  transition:
+    transform var(--motion-normal) var(--motion-ease),
+    background-color var(--motion-fast) ease,
+    color var(--motion-fast) ease;
+}
+.project-visual {
+  transition:
+    transform var(--motion-normal) var(--motion-ease),
+    box-shadow var(--motion-normal) var(--motion-ease),
+    border-color var(--motion-fast) ease;
+}
+@media (hover: hover) and (pointer: fine) {
+  .project-button:hover .project-visual,
+  .project-button:focus-visible .project-visual {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px #17200d12;
+  }
+  body[data-theme='dark'] .project-button:hover .project-visual,
+  body[data-theme='dark'] .project-button:focus-visible .project-visual {
+    border-color: #a77b65;
+    box-shadow: 0 14px 30px #0005;
+  }
+  .project-button:active .project-visual {
+    transform: translateY(-1px);
+  }
+}
+#project-dialog,
+#gallery-lightbox {
+  transform-origin: center center;
+}
+#project-dialog[open]::backdrop,
+#gallery-lightbox[open]::backdrop {
+  animation: work-backdrop-in 300ms ease-out both;
+}
+#project-dialog[data-closing='true']::backdrop,
+#gallery-lightbox[data-closing='true']::backdrop {
+  animation: work-backdrop-out 200ms ease-in both;
+}
+dialog[data-closing='true'] > * {
+  pointer-events: none;
+}
+/* Delay visibility until the mobile menu finishes fading out. */
+@media (max-width: 700px) {
+  header nav {
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-8px);
+    transition:
+      opacity 220ms ease,
+      transform 280ms var(--motion-ease),
+      visibility 0s 280ms;
+  }
+  header nav.open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+    transition-delay: 0s;
+  }
+}
+/* Theme snapshots blend gradients and decorations as well as colors. */
+::view-transition-old(root) {
+  animation: theme-fade-out 240ms ease both;
+}
+::view-transition-new(root) {
+  animation: theme-fade-in 320ms ease both;
+}
+@keyframes theme-fade-out {
+  to {
+    opacity: 0;
+  }
+}
+@keyframes theme-fade-in {
+  from {
+    opacity: 0;
+  }
+}
+@keyframes work-backdrop-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes work-backdrop-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation: none !important;
+  }
+  .project-button:hover .project-visual,
+  .project-button:focus-visible .project-visual,
+  .project-button:active .project-visual {
+    transform: none;
+  }
+}
