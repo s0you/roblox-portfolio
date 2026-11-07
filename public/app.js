@@ -1,3 +1,5 @@
+import { youtubeId } from './youtube.js';
+
 // Small, interruptible transitions. No animation libraries required.
 const motionPreference = matchMedia('(prefers-reduced-motion: reduce)');
 const modalAnimations = new WeakMap();
@@ -240,6 +242,7 @@ function openProject(p) {
   activeProject = p;
   imageIndex = 0;
   const images = imagesFor(p);
+  const videoId = youtubeId(p.youtube);
   modalContent.innerHTML = /* HTML */ `<div class="project-modal-header">
       <span class="modal-category">${escape(p.label)}</span>
       <h2 class="modal-title" id="modal-title">${escape(p.title)}</h2>
@@ -247,6 +250,21 @@ function openProject(p) {
     </div>
     <div class="project-modal-layout">
       <div class="gallery-column">
+        ${videoId
+          ? /* HTML */ `<div class="project-video">
+              <iframe
+                src="https://www.youtube-nocookie.com/embed/${videoId}"
+                title="${escape(p.title)} — YouTube preview"
+                width="560"
+                height="315"
+                allow="encrypted-media; picture-in-picture; fullscreen"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <a class="text-link" href="https://www.youtube.com/watch?v=${videoId}"
+                target="_blank" rel="noreferrer">Watch on YouTube ${icon('external')}</a>
+            </div>`
+          : ''}
         <div class="gallery-stage" data-swipe>
           <img id="gallery-image" alt="" width="640" height="520" />
           <span class="gallery-media-error" hidden>Image unavailable.</span>
@@ -433,6 +451,7 @@ document.querySelector('.lightbox-close').addEventListener('click', () => {
   void closeModal(lightbox);
 });
 dialog.addEventListener('close', () => {
+  modalContent.querySelector('.project-video iframe')?.remove();
   if (lightbox.open) void closeModal(lightbox);
   document.documentElement.classList.remove('has-dialog');
   activeProject = null;

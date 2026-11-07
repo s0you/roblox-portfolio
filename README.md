@@ -34,6 +34,10 @@ npm run build
 
 The checks validate JavaScript syntax, project metadata, and referenced local images. The build validates the project data and copies `public/` to `dist/`.
 
+The server resolves website folders relative to `server.mjs`, so hosting can start it from a different working directory. In production it serves `dist/` when `dist/index.html` exists, otherwise it serves `public/` and logs a warning. If neither folder contains the required index, startup fails with an explicit error.
+
+For Hostinger Node.js deployments, upload the project source with `package.json`, `server.mjs`, `public/`, and `scripts/` at the archive root. Set the build command to `npm run build`, the start command to `npm start`, and the entry file to `server.mjs` where requested. Inspect deployment logs to confirm the build succeeded. Uploading only the contents of `dist/` is for static hosting, not this Node.js deployment.
+
 To serve the build in PowerShell:
 
 ```powershell
@@ -71,6 +75,7 @@ Example project object to add to the `projects` array:
   "details": ["A feature you built.", "Another contribution."],
   "note": "Role: Developer / Scripter.",
   "link": "https://www.roblox.com/games/1234567890",
+  "youtube": "https://www.youtube.com/watch?v=M7lc1UVf-VE",
   "thumbnail": "/images/my-project/cover.jpg",
   "thumbnailAlt": "My Project cover",
   "images": [
@@ -85,7 +90,11 @@ Example project object to add to the `projects` array:
 
 Replace the example image paths and link with your own. Local image paths start with `/images/`, without the `public` prefix. IDs must start with a lowercase letter and contain only lowercase letters, numbers, or hyphens. Keep IDs unique within each array; the category ID `all` is reserved.
 
-The `note`, `link`, and `images` fields are optional. Links must use HTTPS. If you omit `images` or leave it empty, the gallery uses the thumbnail. To add a category, add an object with a unique `id` and a display `name` to `categories`, then use that ID in your projects. Its filter appears once a project uses it.
+The `note`, `link`, `youtube`, and `images` fields are optional. Links must use HTTPS. If you omit `images` or leave it empty, the gallery uses the thumbnail. To add a category, add an object with a unique `id` and a display `name` to `categories`, then use that ID in your projects. Its filter appears once a project uses it.
+
+Set `youtube` to your video's URL to display a playable YouTube preview **first, above the image gallery** in the project details. Supported formats include `youtube.com/watch?v=VIDEO_ID`, `youtu.be/VIDEO_ID`, and YouTube `/shorts/`, `/live/`, and `/embed/` links (including `youtube-nocookie.com/embed/VIDEO_ID`). Use a full HTTPS URL. Remove the field or set it to `""` when no video is available.
+
+The preview does not autoplay and stops when the project dialog closes. A **Watch on YouTube** link is provided if playback is unavailable or the video's owner has disabled embedding. The video in the example is a placeholder; replace it with your own project video.
 
 ## Customization and credit
 

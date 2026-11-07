@@ -1651,6 +1651,25 @@ h2 > span:not(.contact h2 span) {
 .project-detail-column {
   min-width: 0;
 }
+.project-video {
+  margin-bottom: 20px;
+}
+.project-video iframe {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 9px;
+  background: #000;
+}
+.project-video .text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  font-size: 12px;
+}
 .gallery-stage {
   position: relative;
   display: grid;

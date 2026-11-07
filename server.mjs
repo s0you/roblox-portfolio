@@ -1,8 +1,25 @@
 import http from 'node:http';
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { existsSync } from 'node:fs';
 
-const root = path.resolve(process.env.NODE_ENV === 'production' ? 'dist' : 'public');
+const projectRoot = path.dirname(fileURLToPath(import.meta.url));
+const buildRoot = path.join(projectRoot, 'dist');
+const sourceRoot = path.join(projectRoot, 'public');
+const production = process.env.NODE_ENV === 'production';
+const hasBuild = existsSync(path.join(buildRoot, 'index.html'));
+const root = production && hasBuild ? buildRoot : sourceRoot;
+
+if (!existsSync(path.join(root, 'index.html'))) {
+  console.error(
+    'Website files missing. Include public/index.html in the deployment and run npm run build.'
+  );
+  process.exit(1);
+}
+if (production && !hasBuild) {
+  console.warn('dist/index.html is missing; serving public/. Run npm run build to generate dist/.');
+}
 const portFlagIndex = process.argv.indexOf('--port');
 const requestedPort =
   process.env.PORT ?? (portFlagIndex === -1 ? 3000 : process.argv[portFlagIndex + 1]);
@@ -62,5 +79,6 @@ server.on('error', (error) => {
 server.listen(port, '0.0.0.0', () => {
   const runningPort = server.address().port;
   console.log(`Portfolio server running on port ${runningPort}`);
+  console.log(`Serving website files from: ${root}`);
   console.log(`Local: http://localhost:${runningPort}`);
 });

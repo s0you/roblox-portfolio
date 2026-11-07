@@ -9,6 +9,10 @@
       "name": "Game systems"
     },
     {
+      "id": "games",
+      "name": "Games"
+    },
+    {
       "id": "ui",
       "name": "UI & interaction"
     }
@@ -169,6 +173,107 @@
     },
 
     {
+      "id": "fishing",
+      "title": "Advanced Fishing System",
+      "subtitle": "Immersive fishing system.",
+      "category": "games",
+      "label": "GAME / SIMULATION",
+      "type": "GAME SYSTEM",
+      "visual": "",
+      "youtube": "https://youtu.be/4mS6BntmE7A?si=_FMDfJvuakcISz-Q",
+      "tags": ["Viewport preview", "Animation", "Effects", "Fishing"],
+      "intro": "An immersive fishing system with realistic mechanics and engaging gameplay.",
+      "details": [
+        "Progression Rod.",
+        "Tap to reel.",
+        "Bobber Animation.",
+        "Fishing Animation.",
+        "Zone detection.",
+        "Rarity system.",
+        "Dialogue Character",
+        "Catch Results.",
+        "Many More"
+      ],
+      "note": "Roblox system contribution. The card presents a portfolio visual study.",
+      "thumbnail": "/images/fishing/cover.jpg",
+      "thumbnailAlt": "Fishing System",
+      "images": [
+        {
+          "src": "/images/fishing/cover.jpg",
+          "alt": "Fishing System portfolio illustration",
+          "caption": "Fishing system."
+        },
+        {
+          "src": "/images/fishing/1.jpg",
+          "alt": "Fishing System portfolio illustration",
+          "caption": "Fishing system."
+        },
+        {
+          "src": "/images/fishing/2.jpg",
+          "alt": "Fishing System portfolio illustration",
+          "caption": "Fishing system."
+        },
+        {
+          "src": "/images/fishing/3.jpg",
+          "alt": "Fishing System portfolio illustration",
+          "caption": "Fishing system."
+        }
+      ]
+    },
+
+    {
+      "id": "gardening",
+      "title": "Planting / Gardening System",
+      "subtitle": "Immersive gardening system.",
+      "category": "systems",
+      "label": "GAME / SIMULATION",
+      "type": "GAME SYSTEM",
+      "visual": "",
+      "youtube": "https://youtu.be/fIozhWShos0",
+      "tags": ["Garden", "Animation", "Effects", "Plant"],
+      "intro": "An immersive gardening system with realistic mechanics and engaging gameplay.",
+      "details": [
+        "Seed planting system.",
+        "Plant growth stages.",
+        "Crop Harvesting.",
+        "Rarity system.",
+        "Multiple crop types.",
+        "Data saving.",
+        "Many More."
+      ],
+      "note": "Roblox system contribution. The card presents a portfolio visual study.",
+      "thumbnail": "/images/gardening/cover.jpg",
+      "thumbnailAlt": "Gardening System",
+      "images": [
+        {
+          "src": "/images/gardening/cover.jpg",
+          "alt": "Gardening System portfolio illustration",
+          "caption": "Gardening system."
+        },
+        {
+          "src": "/images/gardening/1.jpg",
+          "alt": "Gardening  System portfolio illustration",
+          "caption": "Gardening system."
+        },
+        {
+          "src": "/images/gardening/2.jpg",
+          "alt": "Gardening System portfolio illustration",
+          "caption": "Gardening system."
+        },
+        {
+          "src": "/images/gardening/3.jpg",
+          "alt": "Gardening  System portfolio illustration",
+          "caption": "Gardening system."
+        },
+        {
+          "src": "/images/gardening/4.jpg",
+          "alt": "Gardening  System portfolio illustration",
+          "caption": "Gardening system."
+        }
+      ]
+    },
+
+    {
       "id": "emote",
       "title": "Emote Wheel",
       "subtitle": "Smooth emote interface.",
@@ -176,6 +281,7 @@
       "label": "UI / PLAYER EXPRESSION",
       "type": "GAME SYSTEM",
       "visual": "",
+      "youtube": "https://youtu.be/CD_H5uhykx0?si=HsPH093MhSJJ3mnd",
       "tags": ["Viewport preview", "Animation", "Effects", "Music"],
       "intro": "An emote interface with character previews, visual effects, and smooth transitions that make player expression feel personal.",
       "details": [
@@ -220,6 +326,7 @@
       "label": "UI / NPC DIALOGUE",
       "type": "GAME SYSTEM",
       "visual": "",
+      "youtube": "https://youtu.be/ZBETNPsXL4o?si=VAoYQAJgX_WNXPhe",
       "tags": ["Animation", "Effects"],
       "intro": "An NPC dialogue system with engaging conversations, character previews, and smooth transitions.",
       "details": [

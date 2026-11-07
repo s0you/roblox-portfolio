@@ -1,5 +1,6 @@
 import { readFile, access } from 'node:fs/promises';
 import path from 'node:path';
+import { youtubeId } from '../public/youtube.js';
 const root = path.resolve('public');
 const data = JSON.parse(await readFile(path.join(root, 'data/projects.json'), 'utf8'));
 function assert(condition, message) {
@@ -67,6 +68,8 @@ for (const p of data.projects) {
     }
   }
   if (p.link) assert(/^https:\/\//.test(p.link), p.id + '.link must be an HTTPS URL');
+  if (p.youtube !== undefined && p.youtube !== '')
+    assert(youtubeId(p.youtube), p.id + '.youtube must be a valid HTTPS YouTube video URL');
 }
 console.log(
   `Project data valid: ${data.projects.length} projects, ${data.categories.length} categories.`
