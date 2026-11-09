@@ -176,7 +176,7 @@
       "id": "fishing",
       "title": "Advanced Fishing System",
       "subtitle": "Immersive fishing system.",
-      "category": "games",
+      "category": "systems",
       "label": "GAME / SIMULATION",
       "type": "GAME SYSTEM",
       "visual": "",
@@ -192,7 +192,7 @@
         "Rarity system.",
         "Dialogue Character",
         "Catch Results.",
-        "Many More"
+        "Many More."
       ],
       "note": "Roblox system contribution. The card presents a portfolio visual study.",
       "thumbnail": "/images/fishing/cover.jpg",
@@ -217,6 +217,53 @@
           "src": "/images/fishing/3.jpg",
           "alt": "Fishing System portfolio illustration",
           "caption": "Fishing system."
+        }
+      ]
+    },
+
+    {
+      "id": "gaple",
+      "title": "Gaple/Domino Game System",
+      "subtitle": "Gaple/Domino game system.",
+      "category": "systems",
+      "label": "GAME / SIMULATION",
+      "type": "GAME SYSTEM",
+      "visual": "",
+      "youtube": "https://youtu.be/sm8KEZmiGDY?si=cNFdRANjDBfa7fsE",
+      "tags": ["NPC", "Mini game", "Domino", "Gaple"],
+      "intro": "An immersive Gaple/Domino game system with realistic mechanics and engaging gameplay.",
+      "details": [
+        "NPC animations.",
+        "Team/individual gameplay.",
+        "Kick player.",
+        "Host system.",
+        "Duration card.",
+        "Animation card.",
+        "Many More."
+      ],
+      "note": "Roblox system contribution. The card presents a portfolio visual study.",
+      "thumbnail": "/images/gaple/cover.jpg",
+      "thumbnailAlt": "Gaple/Domino System",
+      "images": [
+        {
+          "src": "/images/gaple/cover.jpg",
+          "alt": "Gaple/Domino System portfolio illustration",
+          "caption": "Gaple/Domino system."
+        },
+        {
+          "src": "/images/gaple/1.jpg",
+          "alt": "Gaple/Domino System portfolio illustration",
+          "caption": "Gaple/Domino system."
+        },
+        {
+          "src": "/images/gaple/2.jpg",
+          "alt": "Gaple/Domino System portfolio illustration",
+          "caption": "Gaple/Domino system."
+        },
+        {
+          "src": "/images/gaple/3.jpg",
+          "alt": "Gaple/Domino System portfolio illustration",
+          "caption": "Gaple/Domino system."
         }
       ]
     },
