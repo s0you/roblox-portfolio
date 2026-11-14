@@ -222,6 +222,53 @@
     },
 
     {
+      "id": "podcast",
+      "title": "Advance Podcast System",
+      "subtitle": "Podcast game system.",
+      "category": "systems",
+      "label": "GAME / SIMULATION",
+      "type": "GAME SYSTEM",
+      "visual": "",
+      "youtube": "https://youtu.be/v4A6AN0D4ag?si=I8gAK5KOmaaGxHRL",
+      "tags": ["Podcast", "Chat", "Voice", "Cutscene", "Donate"],
+      "intro": "An immersive Podcast game system.",
+      "details": [
+        "Voice detector.",
+        "Profile peruser.",
+        "Chat system.",
+        "Cutscene system.",
+        "Role system (host, guest, viewer).",
+        "Robux send.",
+        "Many More."
+      ],
+      "note": "Roblox system contribution. The card presents a portfolio visual study.",
+      "thumbnail": "/images/podcast/cover.jpg",
+      "thumbnailAlt": "Podcast System",
+      "images": [
+        {
+          "src": "/images/podcast/cover.jpg",
+          "alt": "Podcast System portfolio illustration",
+          "caption": "Podcast system."
+        },
+        {
+          "src": "/images/podcast/1.jpg",
+          "alt": "Podcast System portfolio illustration",
+          "caption": "Podcast system."
+        },
+        {
+          "src": "/images/podcast/2.jpg",
+          "alt": "Podcast System portfolio illustration",
+          "caption": "Podcast system."
+        },
+        {
+          "src": "/images/podcast/3.jpg",
+          "alt": "Podcast System portfolio illustration",
+          "caption": "Podcast system."
+        }
+      ]
+    },
+
+    {
       "id": "gaple",
       "title": "Gaple/Domino Game System",
       "subtitle": "Gaple/Domino game system.",
